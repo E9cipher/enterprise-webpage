@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prompt Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles-webpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/822c48f9f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- BACK TO TOP BTN -->
+        <button id="gotop"><i class="fa-solid fa-chevron-up"></i></button>
+        <script>
+                let backToTopBtn = document.getElementById("gotop");
+            
+                // Show/hide button when scrolling
+                window.onscroll = function() {
+                    if (document.documentElement.scrollTop > 100) {
+                        backToTopBtn.classList.add("show");
+                    } else {
+                        backToTopBtn.classList.remove("show");
+                    }
+                };
+            
+                // Scroll to top when clicking the button
+                backToTopBtn.addEventListener("click", function() {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            </script>
+        <section class="myname">
+            <div class="text">
+                <h1 class="title">Enric Galera</h1>
+                <h2 class="subtitle">Yes, it's me!</h2>
+                <!-- <button class="godown">Click me!</button> -->
+                <button class="godown"><a href="#products"><i class="fa-solid fa-chevron-down fa-beat-fade"></i></a></button>
+            </div>
+        </section>
+        <!-- BEGIN SECTION 2 -->
+        <section class="bodysection" id="products">
+            <div class="pctitle">
+                <h1 class="ptitle">Products</h1>
+            </div>
+            <div class="pctext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, corporis blanditiis? Aliquid dolorum eum, sunt praesentium ut ipsam quis, corrupti, temporibus molestias velit odio perspiciatis quos deserunt dicta? Inventore, illum?
+                Quas cum beatae possimus omnis recusandae nostrum accusantium. Expedita ut nostrum maxime blanditiis corporis voluptas, dolorem, asperiores vel sunt voluptatem molestias sequi harum, vitae iste ratione eos deleniti unde dolore?
+                Sit tempore eaque voluptatum aspernatur, eum minus exercitationem nulla doloremque reprehenderit, repellat facilis assumenda atque consectetur labore laboriosam molestiae? Mollitia neque, in ab perspiciatis reiciendis ut explicabo provident dolor dolorem.
+                Impedit voluptas fuga cum, corporis alias rem animi repudiandae qui molestias ipsum atque sunt est ut labore consequuntur deleniti, quas incidunt fugit nobis, nostrum soluta. Facilis voluptate ab quaerat laboriosam!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta repellat, tempora obcaecati quis delectus doloremque explicabo totam fuga repudiandae id ducimus itaque. Voluptate atque inventore unde distinctio, recusandae dolorem enim.
+                Officia provident nisi laboriosam qui, numquam necessitatibus harum veritatis ad cum beatae ab tempora repudiandae, libero delectus cupiditate nam recusandae alias possimus animi officiis. Eaque consequatur unde omnis distinctio consequuntur.
+                Accusamus, minima saepe obcaecati possimus ut, soluta vitae illo cum exercitationem repudiandae voluptas natus! Quas, in quos? Sequi ex, aliquid distinctio, hic minima voluptas harum enim fuga, dignissimos facere aperiam.
+                Ipsum, quibusdam rerum molestias illo dolor eligendi error perferendis nisi hic quo cum nihil deleniti dolores quia commodi ullam a ipsa quam fuga laudantium iusto? Saepe ipsam voluptatum veniam non.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad dolor dignissimos, ex magnam rem alias dolorum quisquam cupiditate illo? Labore atque inventore deserunt vel nemo assumenda, corrupti iure aspernatur sit.
+                Provident neque a tempore fugiat molestiae voluptate consectetur labore quae iusto facilis esse expedita quia atque sint quidem corporis doloribus totam porro ut, asperiores sed numquam quaerat. Eligendi, eaque autem.
+                Impedit in perspiciatis laboriosam labore, reprehenderit aliquid mollitia fugiat, corporis quos illum pariatur ullam ducimus nobis deleniti distinctio iure, error porro? Enim eligendi ex, quod atque saepe tempora recusandae rem.
+                Quisquam facere voluptate ducimus quam laudantium aperiam fuga impedit, blanditiis quae optio illum sit magni aspernatur quidem nemo distinctio commodi odio magnam sapiente excepturi tempora aliquam dolor autem inventore. Amet.
+                </p>
+            </div>
+        </section>
+        <section class="bodysection" id="contact" style="background-color: #3939ec;">
+            <div class="pctitle">
+                <h1 class="ptitle">Contact</h1>
+            </div>
+            <div class="pctext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, corporis blanditiis? Aliquid dolorum eum, sunt praesentium ut ipsam quis, corrupti, temporibus molestias velit odio perspiciatis quos deserunt dicta? Inventore, illum?
+                Quas cum beatae possimus omnis recusandae nostrum accusantium. Expedita ut nostrum maxime blanditiis corporis voluptas, dolorem, asperiores vel sunt voluptatem molestias sequi harum, vitae iste ratione eos deleniti unde dolore?
+                Sit tempore eaque voluptatum aspernatur, eum minus exercitationem nulla doloremque reprehenderit, repellat facilis assumenda atque consectetur labore laboriosam molestiae? Mollitia neque, in ab perspiciatis reiciendis ut explicabo provident dolor dolorem.
+                Impedit voluptas fuga cum, corporis alias rem animi repudiandae qui molestias ipsum atque sunt est ut labore consequuntur deleniti, quas incidunt fugit nobis, nostrum soluta. Facilis voluptate ab quaerat laboriosam!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta repellat, tempora obcaecati quis delectus doloremque explicabo totam fuga repudiandae id ducimus itaque. Voluptate atque inventore unde distinctio, recusandae dolorem enim.
+                Officia provident nisi laboriosam qui, numquam necessitatibus harum veritatis ad cum beatae ab tempora repudiandae, libero delectus cupiditate nam recusandae alias possimus animi officiis. Eaque consequatur unde omnis distinctio consequuntur.
+                Accusamus, minima saepe obcaecati possimus ut, soluta vitae illo cum exercitationem repudiandae voluptas natus! Quas, in quos? Sequi ex, aliquid distinctio, hic minima voluptas harum enim fuga, dignissimos facere aperiam.
+                Ipsum, quibusdam rerum molestias illo dolor eligendi error perferendis nisi hic quo cum nihil deleniti dolores quia commodi ullam a ipsa quam fuga laudantium iusto? Saepe ipsam voluptatum veniam non.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad dolor dignissimos, ex magnam rem alias dolorum quisquam cupiditate illo? Labore atque inventore deserunt vel nemo assumenda, corrupti iure aspernatur sit.
+                Provident neque a tempore fugiat molestiae voluptate consectetur labore quae iusto facilis esse expedita quia atque sint quidem corporis doloribus totam porro ut, asperiores sed numquam quaerat. Eligendi, eaque autem.
+                Impedit in perspiciatis laboriosam labore, reprehenderit aliquid mollitia fugiat, corporis quos illum pariatur ullam ducimus nobis deleniti distinctio iure, error porro? Enim eligendi ex, quod atque saepe tempora recusandae rem.
+                Quisquam facere voluptate ducimus quam laudantium aperiam fuga impedit, blanditiis quae optio illum sit magni aspernatur quidem nemo distinctio commodi odio magnam sapiente excepturi tempora aliquam dolor autem inventore. Amet.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
