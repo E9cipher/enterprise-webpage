@@ -135,6 +135,7 @@ body main section.bodysection .pctitle {
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 body main section.bodysection .pctitle h1.ptitle {
@@ -160,6 +161,10 @@ body main section.bodysection .pctext p a:hover {
     text-decoration: underline;
 }
 
+body main section.bodysection .pctext p a:visited {
+    color: #0000EE;
+}
+
 /* BEGIN LIST SECTION */
 
 body main section.bodysection .pctext div.list {
@@ -182,6 +187,7 @@ body main section.bodysection .pctext div.list ul li {
     display: flex;
     align-items: center;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 body main section.bodysection .pctext div.list ul li strong {
@@ -197,6 +203,10 @@ body main section.bodysection .pctext div.list ul li a {
 
 body main section.bodysection .pctext div.list ul li a:hover {
     text-decoration: underline;
+}
+
+body main section.bodysection .pctext div.list ul li a:visited {
+    color: #0000EE;
 }
 
 body main section.bodysection .pctext div.list ul li::before {
@@ -222,6 +232,8 @@ body main section.bodysection .pctext div.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
     gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 body main section.bodysection .pctext div.grid div.card {
