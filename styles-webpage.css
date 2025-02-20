@@ -176,6 +176,7 @@ body main section.bodysection .pctext div.list {
     /* border: 4px solid black; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    width: 75%;
 }
 
 body main section.bodysection .pctext div.list ul {
@@ -261,4 +262,37 @@ body main section.bodysection .pctext div.grid div.card p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: justify;
+}
+
+/* BEGIN SCROLL EDITS */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: darkgrey;
+    /* padding: 5px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6f6f6f;
+    border-radius: 10px;
+    transition: .3s ease-out all;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5e5a5a;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #898989;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    background-color: #333;
+    color: white;
+}
+
+/* BEGIN EXCEPTIONS */
+body main section.bodysection .pctext.dflex {
+    display: flex;
+    justify-content: center;
 }
