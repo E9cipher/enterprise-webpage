@@ -93,7 +93,7 @@ body main section.myname .text {
     text-align: center;
 }
 
-body main section.myname .text button {
+body main section.myname .text .btn.godown {
     border: 3px solid transparent;
     border-radius: 5px;
     /* background-color: #ccc; */
@@ -106,7 +106,7 @@ body main section.myname .text button {
     position: relative;
 }
 
-body main section.myname .text button:hover {
+body main section.myname .text .btn.godown:hover {
     /* background-color: #b8b4b4; */
     cursor: pointer;
     font-size: 25px;
@@ -318,7 +318,61 @@ body footer div.fgrid div.fitem {
     padding: 10px;
 }
 
-body footer div.fgrid div.fitem input,button:not(.godown) {
+body footer div.fgrid div.fitem h3 {
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 200;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3.5px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body footer div.fgrid div.fitem p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+body footer div.fgrid div.fitem p a {
+    text-decoration: none;
+    color: #d6d6d6;
+    transition: .3s ease-out all;
+    
+}
+
+body footer div.fgrid div.fitem p a:hover {
+    text-decoration: underline;
+    color: #e6e6e6;
+}
+
+/* Icons in the <a> tag */
+
+body footer div.fgrid div.fitem p a .fa-brands {
+    font-size: 22px;
+}
+
+body footer div.fgrid div.fitem p a .fa-instagram {
+    color: #d10cd8;
+}
+
+body footer div.fgrid div.fitem p a .fa-facebook {
+    color: #0c3bd8;
+}
+
+body footer div.fgrid div.fitem p a .fa-twitter {
+    color: #0c72d8;
+}
+
+body footer div.fgrid div.fitem input,.btn:not(.godown) {
     padding: 10px;
     border-radius: 5px;
     border: 3px solid transparent;
@@ -330,19 +384,19 @@ body footer div.fgrid div.fitem input,button:not(.godown) {
     outline: none;
 }
 
-body footer div.fgrid div.fitem input:hover,button:not(.godown):hover {
+body footer div.fgrid div.fitem input:hover,.btn:not(.godown):hover {
     background-color: #222;
     border-color: #444;
     color: #e2e2e2;
 }
 
-body footer div.fgrid div.fitem input:focus,button:not(.godown):focus {
+body footer div.fgrid div.fitem input:focus,.btn:not(.godown):focus {
     background-color: #444;
     border-color: #575757;
     color: #e2e2e2;
 }
 
-body footer div.fgrid div.fitem button:not(.godown) {
+body footer div.fgrid div.fitem .btn:not(.godown) {
     background-color: #d8d80c;
     border: 3px solid transparent /*#fbff10*/;
     color: black;
@@ -350,7 +404,7 @@ body footer div.fgrid div.fitem button:not(.godown) {
     font-size: 20px;
 }
 
-body footer div.fgrid div.fitem button:hover {
+body footer div.fgrid div.fitem .btn:hover {
     background-color: #d8d80c;
     color: black;
     border-color: #fbff10;
