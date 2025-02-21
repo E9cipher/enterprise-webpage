@@ -82,7 +82,7 @@ body main #gotop:hover {
 }
 
 body main section.myname {
-    height: 92vh;
+    height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,24 +100,32 @@ body main section.myname .text button {
     padding: 10px;
     transition: .3s ease-in all;
     font-size: 25px;
+    transform: font-size 0.2s ease;
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
 }
 
 body main section.myname .text button:hover {
     /* background-color: #b8b4b4; */
     cursor: pointer;
-    font-size: 30px;
+    font-size: 25px;
+    transform: scale(1.25);
+    background-color: #f2f3f4;
     /* border-color: royalblue; */
 }
 
 body main section.myname .text h1.title {
     font-size: 100px;
     font-family: 'Economica';
-    font-weight: 200;
+    font-weight: 200; 
 }
 
 body main section.myname .text h2.subtitle {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    z-index: 2;
+    position: relative;
 }
 
 /* BEGIN OTHER SECTIONS */
@@ -289,6 +297,64 @@ body main section.bodysection .pctext div.grid div.card p {
     display: none;
     background-color: #333;
     color: white;
+}
+
+/* BEGIN FOOTER */
+body footer {
+    background-color: #282b2b;
+    padding: 20px;
+    text-align: center;
+}
+
+body footer div.fgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+body footer div.fgrid div.fitem {
+    color: white;
+    padding: 10px;
+}
+
+body footer div.fgrid div.fitem input,button:not(.godown) {
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    background-color: #444;
+    color: #d2d2d2;
+    font-size: 18px;
+    transition: .3s ease-out all;
+    margin-top: 10px;
+    outline: none;
+}
+
+body footer div.fgrid div.fitem input:hover,button:not(.godown):hover {
+    background-color: #222;
+    border-color: #444;
+    color: #e2e2e2;
+}
+
+body footer div.fgrid div.fitem input:focus,button:not(.godown):focus {
+    background-color: #444;
+    border-color: #575757;
+    color: #e2e2e2;
+}
+
+body footer div.fgrid div.fitem button:not(.godown) {
+    background-color: #d8d80c;
+    border: 3px solid transparent /*#fbff10*/;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+body footer div.fgrid div.fitem button:hover {
+    background-color: #d8d80c;
+    color: black;
+    border-color: #fbff10;
+    font-size: 20px;
 }
 
 /* BEGIN EXCEPTIONS */

@@ -101,7 +101,8 @@
                 </div>
         </section>
         <!-- CONTACT SECTION -->
-        <section class="bodysection" id="contact" style="background-color: #3939ec;">
+         <!-- Better do it on a footer, see version 948f01ff5074ba1e69d991370a0178946d2cce63 -->
+        <!-- <section class="bodysection" id="contact" style="background-color: #3939ec;">
             <div class="pctitle">
                 <h1 class="ptitle">Contact</h1>
             </div>
@@ -121,7 +122,38 @@
                 Quisquam facere voluptate ducimus quam laudantium aperiam fuga impedit, blanditiis quae optio illum sit magni aspernatur quidem nemo distinctio commodi odio magnam sapiente excepturi tempora aliquam dolor autem inventore. Amet.
                 </p>
             </div>
-        </section>
+        </section> -->
+        <footer class="contactus" id="contact">
+            <div class="fgrid">
+                <div class="fitem">
+                    <h3>Contact</h3>
+                    <p>Phone: +34 123 456 789</p>
+                    <p>Email:johndoe@example.com </p>
+                    <p>Address: 1234 Main St, Barcelona, Spain</p>
+            </div>
+            <div class="fitem">
+                <h3>Follow us</h3>
+                <p><a href="https://www.facebook.com/@johndoe" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+                <p><a href="https://www.twitter.com/@johndoe" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></p>
+                <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+            </div>
+            <div class="fitem">
+                <h3>Subscribe</h3>
+                <p>Subscribe to our newsletter to receive the latest news and updates.</p>
+                <input type="email" name="email" id="input" placeholder="Enter your email" required>
+                <button type="submit" onclick="DisplayMsg(input.value)">Subscribe!</button>
+            </div>
+        </footer>
     </main>
+    <script>
+        function DisplayMsg(email) {
+            Swal.fire({
+                title: 'Thank you!',
+                text: `You have successfully subscribed to our newsletter with the email: ${email}`,
+                icon: 'success',
+                confirmButtonText: 'Close'
+            });
+        }
+    </script>
 </body>
 </html>
