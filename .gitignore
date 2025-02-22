@@ -2,8 +2,6 @@
 # a Gemfile as specified at https://github.com/github/pages-gem#conventional
 # Ignore info.pdf, it's dummy text and no-one cares about it
 /info.pdf
-# Also Ignore confirm.php by now, we'll add it later
-/confirm.php
 
 # Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
 _site/
