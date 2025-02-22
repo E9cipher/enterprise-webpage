@@ -20,7 +20,8 @@ This project is mainly for html webpages, but if you want to integrate it into a
    <!-- <form action="php/confirm.php" method="post"> -->
       ...
    <!-- </form> -->
-   
+3. Navigate to php/ and uncomment all the lines in confirm.php
+4. Serve the project in a php server
 
 ## Usage
 You are free to use, modify, and distribute this template under the condition that proper attribution is given to the original author.
