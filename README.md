@@ -4,7 +4,7 @@
 This project provides a professional and customizable enterprise webpage template designed for businesses and organizations. It includes a clean design and modular components to ensure easy customization.
 
 ## Coding Language
-It is coded in pure HTML and CSS as it's only a template, but you can easily integrate it into a php environment
+It is coded in pure HTML and CSS as it's only a template, but you can easily integrate it into a php environment as this branch does.
 
 ## Feature
 - Customizable sections
@@ -12,16 +12,7 @@ It is coded in pure HTML and CSS as it's only a template, but you can easily int
 - Easy to integrate with DBs
 
 ## Integration with php
-This project is mainly for html webpages, but if you want to integrate it into a php environment so that you can work with databases and handle answers for newsteller, you must:
-
-1. Rename `index.html` to `index.php`
-2. Uncomment these lines:
-   ```html
-   <!-- <form action="php/confirm.php" method="post"> -->
-      ...
-   <!-- </form> -->
-3. Navigate to php/ and uncomment all the lines in confirm.php
-4. Serve the project in a php server
+This branch was forked for the easy php integration. For this to work, you must modify the SQL connection settings, as shown below
 
 ## Usage
 You are free to use, modify, and distribute this template under the condition that proper attribution is given to the original author.
