@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DoeEmail - The mail which will change your life</title>
+    <title>My Company - Homepage</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="styles-webpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,20 +135,33 @@
                 <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
             </div>
             <div class="fitem">
-                <h3>Subscribe</h3>
-                <p>Subscribe to our newsletter to receive the latest news and updates.</p>
-                <input type="email" name="email" id="input" placeholder="Enter your email" required>
-                <button type="submit" onclick="DisplayMsg(input.value)" class="btn">Subscribe!</button>
+                <form action="./php/confirm.php" method="post" id="form">
+                    <h3>Subscribe</h3>
+                    <p>Subscribe to our newsletter to receive the latest news and updates.</p>
+                    <input type="email" name="email" id="input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe!</button>
+                </form>
+                
             </div>
         </footer>
     </main>
     <script>
+        var form = document.getElementById("form");
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            var email = document.getElementById("input").value;
+            DisplayMsg(email);
+        });
+
         function DisplayMsg(email) {
             Swal.fire({
                 title: 'Thank you!',
                 text: `You have successfully subscribed to our newsletter with the email: ${email}`,
                 icon: 'success',
                 confirmButtonText: 'Close'
+            }).then(function() {
+                form.submit();
+                form.reset();
             });
         }
     </script>

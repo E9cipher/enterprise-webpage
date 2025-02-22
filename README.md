@@ -9,6 +9,18 @@ It is coded in pure HTML and CSS as it's only a template, but you can easily int
 ## Feature
 - Customizable sections
 - Optimized for performance
+- Easy to integrate with DBs
+
+## Integration with php
+This project is mainly for html webpages, but if you want to integrate it into a php environment so that you can work with databases and handle answers for newsteller, you must:
+
+1. Rename `index.html` to `index.php`
+2. Uncomment these lines:
+   ```html
+   <!-- <form action="php/confirm.php" method="post"> -->
+      ...
+   <!-- </form> -->
+   
 
 ## Usage
 You are free to use, modify, and distribute this template under the condition that proper attribution is given to the original author.
@@ -16,7 +28,7 @@ You are free to use, modify, and distribute this template under the condition th
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone [repository URL]
+   git clone [https://github.com/E9cipher/enterprise-webpage.git]
    ```
 2. Navigate to the project folder:
    ```bash
