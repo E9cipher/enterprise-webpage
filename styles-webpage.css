@@ -23,6 +23,9 @@ body header nav.navbar {
     display: flex;
     background-color: lightseagreen;
     padding: 5px;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
 }
 
 body header nav.navbar ul {
