@@ -23,6 +23,8 @@ body header nav.navbar {
     display: flex;
     background-color: lightseagreen;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 body header nav.navbar ul {
