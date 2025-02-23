@@ -5,16 +5,12 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: auto;
-    height: auto;
 }
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    overflow: auto;
-    height: auto;
 }
 
 body header {
@@ -90,7 +86,7 @@ body main #gotop:hover {
 }
 
 body main section.myname {
-    height: 93vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
