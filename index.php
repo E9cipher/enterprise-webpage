@@ -23,6 +23,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#whyus">Why choose us?</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -135,7 +136,7 @@
                 <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
             </div>
             <div class="fitem">
-                <form action="#" method="post" id="form">
+                <form action="php/confirm.php" method="post" id="form">
                     <h3>Subscribe</h3>
                     <p>Subscribe to our newsletter to receive the latest news and updates.</p>
                     <input type="email" name="email" id="input" placeholder="Enter your email" required>
