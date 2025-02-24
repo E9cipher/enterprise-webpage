@@ -139,7 +139,7 @@
                 <form action="php/confirm.php" method="post" id="form">
                     <h3>Subscribe</h3>
                     <p>Subscribe to our newsletter to receive the latest news and updates.</p>
-                    <input type="email" name="email" id="input" placeholder="Enter your email" required>
+                    <input type="email" name="email" id="input" placeholder="Enter your email" autocomplete="on" required>
                     <button type="submit" class="btn">Subscribe!</button>
                 </form>
                 
@@ -149,10 +149,25 @@
     <script>
         var form = document.getElementById("form");
         form.addEventListener("submit", function(e) {
+            const email = document.getElementById("input").value;
             e.preventDefault();
-            var email = document.getElementById("input").value;
-            DisplayMsg(email);
+            reviseEmail(email);
         });
+
+        // Revise user has put a valid email:
+        function reviseEmail (email) {
+            if (email === "" || email === "example@example.com") {
+            Swal.fire({
+                title: 'Oops!',
+                text: 'Please enter a valid email address.',
+                icon: 'error',
+                confirmButtonText: 'Close'
+            });
+            form.reset();
+        } else {
+            DisplayMsg(email);
+        }
+        }
 
         function DisplayMsg(email) {
             Swal.fire({
