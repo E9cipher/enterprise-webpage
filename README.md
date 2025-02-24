@@ -4,7 +4,10 @@
 This project provides a professional and customizable enterprise webpage template designed for businesses and organizations. It includes a clean design and modular components to ensure easy customization.
 
 ## If you visited the website and this is what you see
-Don't panic! Just do a hard refresh (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd>
+Don't panic! You can:
+- Open this page in another browser
+- Do a hard refresh (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd>).
+- If hard refresh doesn't work, [click here](https://e9cipher.github.io/enterprise-webpage/index.html).
 
 ## Coding Language
 It is coded in pure HTML and CSS as it's only a template, but you can easily integrate it into a php environment as this branch does.
