@@ -10,7 +10,7 @@ Don't panic! You can:
 - If hard refresh doesn't work, [click here](https://e9cipher.github.io/enterprise-webpage/index.html).
 
 ## Coding Language
-It is coded in pure HTML and CSS as it's only a template, but you can easily integrate it into a php environment as this branch does.
+It is coded in pure HTML and CSS as it's only a template, but you can easily integrate it into a php environment as the php branch does.
 
 ## Feature
 - Customizable sections
