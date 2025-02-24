@@ -86,7 +86,7 @@ body main #gotop:hover {
 }
 
 body main section.myname {
-    min-height: 120vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
