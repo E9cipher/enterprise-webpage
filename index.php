@@ -156,8 +156,8 @@
 
         function DisplayMsg(email) {
             Swal.fire({
-                title: 'Thank you!',
-                text: `You have successfully subscribed to our newsletter with the email: ${email}`,
+                title: 'That\'s it!',
+                html: `<p>You have successfully subscribed to our newsletter with the email: <b>${email}</b></p>`,
                 icon: 'success',
                 confirmButtonText: 'Close'
             }).then(function() {
