@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,6 +137,12 @@
                 <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
             </div>
             <div class="fitem">
+                <?php 
+                if (isset($_SESSION['result'])) {
+                    echo "<p>{$_SESSION['result']}</p>";
+                    unset($_SESSION['result']); // Clear session message
+                }
+                ?>
                 <form action="php/confirm.php" method="post" id="form">
                     <h3>Subscribe</h3>
                     <p>Subscribe to our newsletter to receive the latest news and updates.</p>
@@ -151,7 +158,28 @@
         form.addEventListener("submit", function(e) {
             const email = document.getElementById("input").value;
             e.preventDefault();
+            let formData = new FormData(this);
             reviseEmail(email);
+            fetch("confirm.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json()) // Expect JSON response
+            .then(data => {
+                Swal.fire({
+                    title: data.status === "success" ? "Success!" : "Oops...",
+                    text: data.message,
+                    icon: data.status
+                });
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: "Error",
+                    text: "Something went wrong!",
+                    icon: "error"
+                });
+                console.error("Error:", error);
+            });
         });
 
         // Revise user has put a valid email:
