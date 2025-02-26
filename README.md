@@ -35,7 +35,7 @@ This project is licensed under the [Enterprise Webpage Template License](LICENSE
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to submit a pull request.
 
 ## Links of use
-XAMPP (Apache2, MariaDB PHP & Perl): [click here](https://apachefriends.org/)
-Apache2 Web server: [click here](https://httpd.apache.org/download.cgi)
-MySQL: [click here](https://www.mysql.com/downloads/)
-PHPMyAdmin: [click here](https://phpmyadmin.net/)
+- XAMPP (Apache2, MariaDB PHP & Perl): [click here](https://apachefriends.org/)
+- Apache2 Web server: [click here](https://httpd.apache.org/download.cgi)
+- MySQL: [click here](https://www.mysql.com/downloads/)
+- PHPMyAdmin: [click here](https://phpmyadmin.net/)
