@@ -44,6 +44,7 @@ body header nav.navbar ul li {
 body header nav.navbar ul li:hover {
     background-color: rgba(12, 235, 197, 0.479);
     text-decoration: underline;
+    min-width: fit-content;
 }
 
 body header nav.navbar ul li a {
