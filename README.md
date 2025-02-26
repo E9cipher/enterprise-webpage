@@ -26,10 +26,16 @@ You are free to use, modify, and distribute this template under the condition th
    ```bash
    cd enterprise-webpage
    ```
-3. Navigate to [your localhost](http://localhost) and open `index.php`. You must have a php environment like XAMPP or Apache2 & MySQL, else it won't work. You can download XAMPP from [here](https://apachefriends.org/).
+3. Navigate to [your localhost](http://localhost) and open `index.php`. You must have a php environment like XAMPP or Apache2 & MySQL, else it won't work.
 
 ## License
 This project is licensed under the [Enterprise Webpage Template License](LICENSE), which requires proper attribution to the original author.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to submit a pull request.
+
+## Links of use
+XAMPP (Apache2, MariaDB PHP & Perl): [click here](https://apachefriends.org/)
+Apache2 Web server: [click here](https://httpd.apache.org/download.cgi)
+MySQL: [click here](https://www.mysql.com/downloads/)
+PHPMyAdmin: [click here](https://phpmyadmin.net/)
