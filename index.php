@@ -83,7 +83,7 @@
                     </div>
             </div>
         </section>
-        <section class="bodysection" id="whyus" style="background-color: #c54dc5cd;">
+        <section class="bodysection" id="whyus" style="background-color: #a491d3;">
             <div class="pctitle">
                 <h1 class="ptitle">Why choose us?</h1>
             </div>
@@ -124,19 +124,19 @@
         </section> -->
         <footer class="contactus" id="contact">
             <div class="fgrid">
-                <div class="fitem">
+                <div class="fitem contact">
                     <h3>Contact</h3>
                     <p>Phone: +34 123 456 789</p>
                     <p>Email:johndoe@example.com </p>
                     <p>Address: 1234 Main St, Barcelona, Spain</p>
             </div>
-            <div class="fitem">
+            <div class="fitem follow">
                 <h3>Follow us</h3>
                 <p><a href="https://www.facebook.com/@johndoe" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
                 <p><a href="https://www.twitter.com/@johndoe" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></p>
                 <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
             </div>
-            <div class="fitem">
+            <div class="fitem subscribe">
                 <?php 
                 if (isset($_SESSION['result'])) {
                     echo "<p>{$_SESSION['result']}</p>";
