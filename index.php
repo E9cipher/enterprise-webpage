@@ -90,8 +90,8 @@
             <div class="pctext dflex">
                 <div class="list">
                     <ul>
-                        <li><strong>Quality products:</strong>Our products have a 1-year guarantee. If anything happens, we'll be happy to be in touch with you.</li>
-                        <li><strong>Customer service:</strong>Our customer service is available 24/7. You can contact us by phone, email or chat.</li>
+                        <li><strong>Quality products:</strong>Our products have a 1-year guarantee. If anything happens, you get a 100% refund.</li>
+                        <li><strong>Customer service:</strong>Our customer service is available 24/7. You can <a href="#contact" style="margin-right: 4.38px">contact us</a> by phone, email or chat.</li>
                         <li><strong>Experienced team:</strong>Our team consists of highly skilled professionals with years of experience in the industry.</li>
                         <li><strong>Customer satisfaction:</strong>We prioritize customer satisfaction and strive to exceed expectations in every interaction.</li>
                         <li><strong>Eco-friendly:</strong>We are committed to sustainability and use eco-friendly materials and processes.</li>
@@ -139,7 +139,7 @@
             <div class="fitem subscribe">
                 <?php 
                 if (isset($_SESSION['result'])) {
-                    echo "<p>{$_SESSION['result']}</p>";
+                    echo "<script>console.log('{$_SESSION['result']}');</script>";
                     unset($_SESSION['result']); // Clear session message
                 }
                 ?>

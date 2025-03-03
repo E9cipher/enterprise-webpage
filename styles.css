@@ -27,12 +27,13 @@ body header nav.navbar {
     top: 0;
     overflow: hidden;
     z-index: 9999;
+    justify-content: flex-start;
 }
 
 body header nav.navbar ul {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    /*justify-content: space-between;
+    width: 46%;*/
 }
 
 body header nav.navbar ul li {

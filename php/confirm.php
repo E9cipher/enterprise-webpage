@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 echo "Record inserted!";
+sleep (2);
 echo "<script>window.location.href = '../index.php';</script>";
 exit();
 ?>
