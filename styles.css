@@ -26,6 +26,7 @@ body header nav.navbar {
     overflow: hidden;
     top: 0;
     position: fixed;
+    justify-content: flex-start;
 }
 
 body header nav.navbar ul {
