@@ -219,10 +219,10 @@ body main {
                         }
 
                         &::before {
-                            content: "\f00c"; /* FontAwesome check-circle icon */
-                            font-family: "Font Awesome 5 Free"; /* Ensure FontAwesome is used */
-                            font-weight: 900; /* Required for solid icons */
-                            color: #10e03d; /* Change icon color */
+                            content: "\f00c";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900; 
+                            color: #10e03d;
                             font-size: 30px;
                             margin-right: 10px;
                             display: flex;
@@ -273,7 +273,7 @@ body main {
             div.boxcontainer {
                 display: grid;
                 justify-content: center;
-                grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+                grid-template-columns: repeat(auto-fill, 1fr);
                 gap: 10px;
                 //padding: 20px 200px;
                 .box {
