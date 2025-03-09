@@ -236,7 +236,7 @@ body main {
 
             div.grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+                grid-template-columns: repeat(auto-fill, 1fr);
                 gap: 20px;
                 justify-content: center;
                 /* align-items: center; */
