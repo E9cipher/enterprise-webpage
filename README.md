@@ -12,7 +12,7 @@ It is coded in pure HTML and CSS as it's only a template, but you can easily int
 - Easy to integrate with DBs
 
 ## Integration with php
-This project is mainly for html webpages, but if you want to set it up on a php interface, instead of cloning the html branch clone this branch, which is specialized with form submission to php
+This is the right branch for php integration. For this to work, you must modify the DB connection settings on [php/confirm.php](https://github.com/E9cipher/enterprise-webpage/blob/php/php/confirm.php) in the commented line
 
 ## Usage
 You are free to use, modify, and distribute this template under the condition that proper attribution is given to the original author.
