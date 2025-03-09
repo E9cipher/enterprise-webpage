@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Fine work! User is not a hacker
         $_SESSION['result'] = "1";
-        $conn = new mysqli('localhost', 'scripts', 'Scripts123!', 'enterprise-webpage');
+        $conn = new mysqli('localhost', 'scripts', 'Scripts123!', 'enterprise-webpage'); // Modify this line with your current mysql settings
         // Check for connection error
         if($conn->connect_error){
             die('Connection Failed : '.$conn->connect_error);
