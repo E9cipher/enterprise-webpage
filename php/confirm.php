@@ -9,14 +9,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Fine work! User is not a hacker
         $_SESSION['result'] = "1";
-        $conn = new mysqli('localhost', 'scripts', 'Scripts123!', 'enterprise-webpage'); // Modify this line with your current mysql settings
+        $conn = new mysqli('localhost', 'scripts', 'Scripts123!', 'enterprise-webpage'); // Modify this line with your current mysql settings & database
         // Check for connection error
         if($conn->connect_error){
             die('Connection Failed : '.$conn->connect_error);
         }
 
         // Insert data into the DB
-        $sql = "INSERT INTO users (email) VALUES ('$email')";
+        $sql = "INSERT INTO users (email) VALUES ('$email')"; // Modify the table, in this case email to your current one
         if($conn->query($sql) === TRUE) {
             // echo "<script>alert('New record created successfully');</script>";
             echo "Inserted!<br/>";
