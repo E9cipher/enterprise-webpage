@@ -11,6 +11,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 body header {
@@ -21,7 +22,7 @@ body header {
         width: 100%;
         display: flex;
         background-color: lightseagreen;
-        padding: 5px;
+        padding: 7px 5px;
         overflow: hidden;
         top: 0;
         position: fixed;
@@ -30,7 +31,8 @@ body header {
         ul {
             display: flex;
             justify-content: space-between;
-            width: 30%;
+            // width: 40%;
+            min-width: fit-content;
 
             li {
                 list-style-type: none;
@@ -173,6 +175,9 @@ body main {
                 }
             }
 
+            /* DIV.LIST SECTION */
+            // This section is NOT responsive
+
             div.list {
                 display: flex;
                 flex-direction: column;
@@ -226,6 +231,8 @@ body main {
                     }
                 }
             }
+            /* DIV.GRID SECTION */
+            // This section IS responsive
 
             div.grid {
                 display: grid;
@@ -261,6 +268,81 @@ body main {
                     }
                 }
             }
+            /* SPONSORS & DIV.BOX SECTION */
+            // This section IS responsive
+            div.boxcontainer {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+                gap: 10px;
+                //padding: 20px 200px;
+                .box {
+                    background-color: orange;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+                    text-align: center;
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    display: flex;
+                    height: fit-content;
+                    &.no-img {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    /* Positioning also depends in what's first: the img or the text */
+                    &.align-right {
+                        // Image goes first
+                        justify-content: flex-start;
+                        align-items: center;
+                        img {
+                            margin-right: 10px;
+                            left: 2px;
+                        }
+                    }
+                    &.align-left {
+                        // Text goes first
+                        justify-content: flex-end;
+                        align-items: center;
+                        img {
+                            margin-left: 10px;
+                        }
+                    }
+                    &.align-top {
+                        // What you want upside goes first
+                        flex-direction: column;
+                        align-items: flex-start;
+                        img {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &.align-bottom {
+                        // What you want upside goes first
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        img {
+                            margin-top: 10px;
+                        }
+                    }
+                    img {
+                        width: 100px;
+                        height: auto;
+                    }
+                    &.size1 {
+                        grid-column: span 1;
+                    }
+                    &.size2 {
+                        grid-column: span 2;
+                    }
+                    &.size3 {
+                        grid-column: span 3;
+                    }
+                    &.size4 {
+                        grid-column: span 4;
+                    }
+                }
+            }
         }
     }
 }
@@ -283,7 +365,7 @@ body main {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #898989;
+    background-color: #a9a9a9;
 }
 
 ::-webkit-scrollbar-button {

@@ -18,7 +18,7 @@ It is coded in pure HTML and CSS as it's only a template, but you can easily int
 - Easy to integrate with DBs
 
 ## Integration with php
-This branch was forked for the easy php integration. For this to work, you must modify the SQL connection settings, as shown below
+This project is not designed for php implementation, however, the branch php does have the properties. Read more [here](https://github.com/E9cipher/enterprise-webpage/tree/php).
 
 ## Usage
 You are free to use, modify, and distribute this template under the condition that proper attribution is given to the original author.
@@ -26,7 +26,7 @@ You are free to use, modify, and distribute this template under the condition th
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/E9cipher/enterprise-webpage.git]
+   git clone [https://github.com/E9cipher/enterprise-webpage.git](https://github.com/E9cipher/enterprise-webpage.git)
    ```
 2. Navigate to the project folder:
    ```bash
@@ -39,3 +39,6 @@ This project is licensed under the [Enterprise Webpage Template License](LICENSE
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to submit a pull request.
+
+## Thanks to
+Thanks to [sweetalert2](https://github.com/sweetalert2/) for the popups. I can't avoid using them for all my projects.
