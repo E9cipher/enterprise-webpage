@@ -34,6 +34,9 @@ This project is licensed under the [Enterprise Webpage Template License](LICENSE
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to submit a pull request.
 
+## Thanks to
+Thanks to [sweetalert2](https://github.com/sweetalert2) for the popups. I can't avoid using them for all my projects.
+
 ## Links of use
 - XAMPP (Apache2, MariaDB PHP & Perl): [click here](https://apachefriends.org/)
 - Apache2 Web server: [click here](https://httpd.apache.org/download.cgi)
