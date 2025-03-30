@@ -26,7 +26,7 @@ You are free to use, modify, and distribute this template under the condition th
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/E9cipher/enterprise-webpage.git](https://github.com/E9cipher/enterprise-webpage.git)
+   git clone https://github.com/E9cipher/enterprise-webpage.git
    ```
 2. Navigate to the project folder:
    ```bash
