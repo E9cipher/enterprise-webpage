@@ -44,3 +44,5 @@ sleep (2);
 echo "<script>window.location.href = '../index.php';</script>";
 exit();
 ?>
+
+<?php include '/var/www/html/homebtn.php'; ?>
