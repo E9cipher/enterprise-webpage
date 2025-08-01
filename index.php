@@ -211,4 +211,7 @@
     </script>
 </body>
 </html>
-<?php include '/var/www/html/homebtn.php'; ?>
+
+
+
+<?php if (empty($NO_HOMEBTN)) include "/var/www/html/homebtn.php"; ?>
