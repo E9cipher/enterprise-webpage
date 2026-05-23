@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/822c48f9f0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif:regular" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -31,28 +38,29 @@
         <!-- BACK TO TOP BTN -->
         <button id="gotop" title="Go top" type="button"><i class="fa-solid fa-chevron-up"></i></button>
         <script>
-                let backToTopBtn = document.getElementById("gotop");
-            
-                // Show/hide button when scrolling
-                window.onscroll = function() {
-                    if (document.documentElement.scrollTop > 100) {
-                        backToTopBtn.classList.add("show");
-                    } else {
-                        backToTopBtn.classList.remove("show");
-                    }
-                };
-            
-                // Scroll to top when clicking the button
-                backToTopBtn.addEventListener("click", function() {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                });
-            </script>
+            let backToTopBtn = document.getElementById("gotop");
+
+            // Show/hide button when scrolling
+            window.onscroll = function () {
+                if (document.documentElement.scrollTop > 100) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            };
+
+            // Scroll to top when clicking the button
+            backToTopBtn.addEventListener("click", function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        </script>
         <section class="myname">
             <div class="text">
                 <h1 class="title">Company Name</h1>
                 <h2 class="subtitle">My Slogan</h2>
                 <!-- <button class="godown">Click me!</button> -->
-                <button class="godown btn"><a href="#products"><i class="fa-solid fa-chevron-down fa-beat-fade"></i></a></button>
+                <button class="godown btn"><a href="#products"><i
+                            class="fa-solid fa-chevron-down fa-beat-fade"></i></a></button>
             </div>
         </section>
         <!-- BEGIN SECTION 2 -->
@@ -61,26 +69,36 @@
                 <h1 class="ptitle">Products</h1>
             </div>
             <div class="pctext">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae,
+                    ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur
+                    dicta quis non iusto.
                 </p>
                 <div class="grid">
                     <div class="card">
                         <h3>Product 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum
+                            quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione!
+                            Illum consectetur dicta quis non iusto.</p>
                     </div>
                     <div class="card">
                         <h3>Product 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum
+                            quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione!
+                            Illum consectetur dicta quis non iusto.</p>
                     </div>
                     <div class="card">
                         <h3>Product 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum
+                            quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione!
+                            Illum consectetur dicta quis non iusto.</p>
                     </div>
                     <div class="card">
                         <h3>Product 4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione! Illum consectetur dicta quis non iusto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque aut eveniet hic, cum
+                            quae, ducimus perferendis aliquid voluptate omnis nesciunt excepturi cupiditate ratione!
+                            Illum consectetur dicta quis non iusto.</p>
                     </div>
-            </div>
+                </div>
         </section>
         <section class="bodysection" id="whyus" style="background-color: #44A08D;">
             <div class="pctitle">
@@ -89,12 +107,18 @@
             <div class="pctext dflex">
                 <div class="list">
                     <ul>
-                        <li><strong>Quality products:</strong>Our products have a 1-year guarantee. If anything happens, we'll be happy to be in touch with you.</li>
-                        <li><strong>Customer service:</strong>Our customer service is available 24/7. You can contact us by phone, email or chat.</li>
-                        <li><strong>Experienced team:</strong>Our team consists of highly skilled professionals with years of experience in the industry.</li>
-                        <li><strong>Customer satisfaction:</strong>We prioritize customer satisfaction and strive to exceed expectations in every interaction.</li>
-                        <li><strong>Eco-friendly:</strong>We are committed to sustainability and use eco-friendly materials and processes.</li>
-                        <li><strong>Low prices:</strong>We offer better value for money without compromising on quality.</li>
+                        <li><strong>Quality products:</strong>Our products have a 1-year guarantee. If anything happens,
+                            we'll be happy to be in touch with you.</li>
+                        <li><strong>Customer service:</strong>Our customer service is available 24/7. You can contact us
+                            by phone, email or chat.</li>
+                        <li><strong>Experienced team:</strong>Our team consists of highly skilled professionals with
+                            years of experience in the industry.</li>
+                        <li><strong>Customer satisfaction:</strong>We prioritize customer satisfaction and strive to
+                            exceed expectations in every interaction.</li>
+                        <li><strong>Eco-friendly:</strong>We are committed to sustainability and use eco-friendly
+                            materials and processes.</li>
+                        <li><strong>Low prices:</strong>We offer better value for money without compromising on quality.
+                        </li>
                     </ul>
                 </div>
         </section>
@@ -125,7 +149,7 @@
             </div>
         </section>
         <!-- CONTACT SECTION -->
-         <!-- Better do it on a footer, see version https://github.com/E9cipher/enterpise-webpage/commit/948f01ff5074ba1e69d991370a0178946d2cce63 -->
+        <!-- Better do it on a footer, see version https://github.com/E9cipher/enterpise-webpage/commit/948f01ff5074ba1e69d991370a0178946d2cce63 -->
         <!-- <section class="bodysection" id="contact" style="background-color: #3939ec;">
             <div class="pctitle">
                 <h1 class="ptitle">Contact</h1>
@@ -154,27 +178,30 @@
                     <p>Phone: +34 123 456 789</p>
                     <p>Email:johndoe@example.com </p>
                     <p>Address: 1234 Main St, Barcelona, Spain</p>
-            </div>
-            <div class="fitem">
-                <h3>Follow us</h3>
-                <p><a href="https://www.facebook.com/@johndoe" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
-                <p><a href="https://www.twitter.com/@johndoe" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></p>
-                <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
-            </div>
-            <div class="fitem">
-                <form action="./php/confirm.php" method="post" id="form">
-                    <h3>Subscribe</h3>
-                    <p>Subscribe to our newsletter to receive the latest news and updates.</p>
-                    <input type="email" name="email" id="input" placeholder="Enter your email" required>
-                    <button type="submit" class="btn">Subscribe!</button>
-                </form>
-                
-            </div>
+                </div>
+                <div class="fitem">
+                    <h3>Follow us</h3>
+                    <p><a href="https://www.facebook.com/@johndoe" target="_blank"><i class="fa-brands fa-facebook"></i>
+                            Facebook</a></p>
+                    <p><a href="https://www.twitter.com/@johndoe" target="_blank"><i class="fa-brands fa-twitter"></i>
+                            Twitter</a></p>
+                    <p><a href="https://www.instagram.com/@johndoe" target="_blank"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></p>
+                </div>
+                <div class="fitem">
+                    <form action="./php/confirm.php" method="post" id="form">
+                        <h3>Subscribe</h3>
+                        <p>Subscribe to our newsletter to receive the latest news and updates.</p>
+                        <input type="email" name="email" id="input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe!</button>
+                    </form>
+
+                </div>
         </footer>
     </main>
     <script>
         var form = document.getElementById("form");
-        form.addEventListener("submit", function(e) {
+        form.addEventListener("submit", function (e) {
             e.preventDefault();
             var email = document.getElementById("input").value;
             DisplayMsg(email);
@@ -186,11 +213,12 @@
                 text: `You have successfully subscribed to our newsletter with the email: ${email}`,
                 icon: 'success',
                 confirmButtonText: 'Close'
-            }).then(function() {
+            }).then(function () {
                 form.submit();
                 form.reset();
             });
         }
     </script>
 </body>
+
 </html>
